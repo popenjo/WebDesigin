@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 E-2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0; padding: 0;
+            list-style: none;
+            text-decoration: none;
+            font-size: 16px;
+            color:#333;
+        }
+        #wrap {
+            width: 100%; 
+        }
+        #main {
+            width: 100%;
+            display: flex;
+        }
+        #header {
+            width: 200px;
+            height: 750px;
+            background-color: #b3b3b3;
+        }
+        #contents {
+            width: 400px;
+            height: 750px;
+            background-color: #d1d1d1;
+        }
+        #contents .notice {
+            width: 100%;
+            height: 300px;
+            background-color: #efefef;
+        }
+        #contents .gallary {
+            width: 100%;
+            height: 300px;
+            background-color: #e8e8e8;
+        }
+        #contents .img_link {
+            width: 100%;
+            height: 150px;
+            background-color: #dedede;}
+        #slider {
+            width: calc(100% - 600px);
+            height: 750px;
+            background-color: #d7d7d7;
+        }
+        #footer {
+            width: 100%;
+            height: 100px;
+            background-color: #e3e3e3;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <main id="main">
+            <header id="header">
+                <h1 class="logo"></h1>
+                <nav class="nav">
+                    <ul class="menu1">
+                        <li>submenu1-1</li>
+                        <li>submenu1-2</li>
+                        <li>submenu1-3</li>
+                        <li>submenu1-4</li>
+                    </ul>
+                    <ul class="menu2">
+                        <li>submenu1-1</li>
+                        <li>submenu1-2</li>
+                        <li>submenu1-3</li>
+                        <li>submenu1-4</li>
+                    </ul>
+                    <ul class="menu3">
+                        <li>submenu1-1</li>
+                        <li>submenu1-2</li>
+                        <li>submenu1-3</li>
+                        <li>submenu1-4</li>
+                    </ul>
+                    <ul class="menu4">
+                        <li>submenu1-1</li>
+                        <li>submenu1-2</li>
+                        <li>submenu1-3</li>
+                        <li>submenu1-4</li>
+                    </ul>
+                </nav>
+            </header>
+            <scetion id="contents">
+                <ul class="notice"> 공지사항
+                    <li>Lorem ipsum dolor amet,</li>
+                    <li>Lorem ipsum dolor amet,</li>
+                    <li>Lorem ipsum dolor amet,</li>
+                    <li>Lorem ipsum dolor amet,</li>
+                </ul>
+                <ul class="gallary">
+                    <li><img src="#" alt=""></li>
+                    <li><img src="#" alt=""></li>
+                </ul>
+                <ul class="img_link">
+                    <li><img src="#" alt=""></li>
+                    <li><img src="#" alt=""></li>
+                    <li><img src="#" alt=""></li>
+                    <li><img src="#" alt=""></li>
+                </ul>
+            </scetion>
+            <article id="slider"></article>
+        </main>
+        <footer id="footer">
+
+        </footer>
+    </div>
+</body>
+</html>

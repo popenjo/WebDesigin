@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-flow 속성 예시</title>
+    <style>
+        .container {
+            display: flex;
+            width: 300px;
+            height: 150px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+        .item {
+            width: 100px;
+            height: 50px;
+            background-color: skyblue;
+            margin: 5px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .row-wrap {
+            flex-flow: row wrap;
+        }
+        .column-nowrap {
+            flex-flow: column nowrap;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>flex-flow: row wrap</h2>
+    <div class="container row-wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h2>flex-flow: column nowrap</h2>
+    <div class="container column-nowrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+</body>
+</html>

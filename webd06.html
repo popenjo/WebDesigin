@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 레이아웃 B-2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0; padding: 0;
+            list-style: none;
+            text-decoration: none;
+            font-size: 16px;
+            color: #333;
+            /* 필수로 외우기! */
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        #header {
+            width: 100%;
+            display:flex;
+        }
+        #header .logo {
+            width: 20%;
+            height:100px;
+            background-color: #bebebe;
+        }
+        #header .nav {
+            width: 80%;
+            height:100px;
+            display: flex;
+            background-color: #e2e2e2;
+        }
+        #header .nav .menu1 {
+        }
+        #header .nav .menu1:hover {
+            transition: 0.4s;
+            background:brown;
+        }
+        #header .nav .menu1 > li {
+
+        }
+        #slide {
+            width:100%;
+            height: 300px;
+            background-color: cyan;
+        }
+        #contents {
+            width: 100%;
+            display: flex;
+        }
+        #contents .content1 {
+            width: 33.3333%;
+            height:200px;
+            background-color: #c3c3c3;
+        }
+        #contents .content2 {
+            width: 33.3333%;
+            height:200px;
+            background-color: #a2a2a2;
+        }
+        #contents .content3 {
+            width: 33.3333%;
+            height:200px;
+            background-color: #a8a8a8;
+        }
+        #footer {
+            width: 100%;
+            display: flex;
+        }
+        #footer .copyright {
+            width: 80%;
+            height: 100px;
+            background-color: #dd22;
+        }
+        #footer .f_menu {
+            width:20%;
+        }
+        #footer .f_menu .sns {
+            width: 100%;
+            height: 50%;
+            background-color: #fff;
+        }
+        #footer .f_menu .family {
+            width: 100%;
+            height: 50%;
+            background-color: #a1a1a1;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo"><img src="#" alt="logo_img"></h1>
+            <nav class="nav">
+                <ul class="menu1">menu-1
+                    <li>submenu-1</li>
+                    <li>submenu-2</li>
+                    <li>submenu-3</li>
+                    <li>submenu-4</li>
+                </ul>
+                <ul class="menu1">menu-2
+                    <li>submenu-1</li>
+                    <li>submenu-2</li>
+                    <li>submenu-3</li>
+                    <li>submenu-4</li>
+                </ul>
+                <ul class="menu1">menu-3
+                    <li>submenu-1</li>
+                    <li>submenu-2</li>
+                    <li>submenu-3</li>
+                    <li>submenu-4</li>
+                </ul>
+                <ul class="menu1">menu-4
+                    <li>submenu-1</li>
+                    <li>submenu-2</li>
+                    <li>submenu-3</li>
+                    <li>submenu-4</li>
+                </ul>
+            </nav>
+        </header>
+        <!-- header -->
+        <article id="slide"></article>
+        <!-- slide -->
+        <main id="contents">
+            <div class="content1"></div>
+            <div class="content2"></div>
+            <div class="content3"></div>
+        </main>
+        <!-- main -->
+        <footer id="footer">
+            <div class="copyright"></div>
+            <div class="f_menu">
+                <div class="sns"></div>
+                <div class="family"></div>
+            </div>
+        </footer>
+        <!-- footer -->
+    </div>
+</body>
+</html>
